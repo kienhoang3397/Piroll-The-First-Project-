@@ -107,36 +107,71 @@
 .container3{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, auto) ;
+    grid-template-columns: repeat(4, 1fr) ;
     
     grid-template-rows: 324.55px 324.55px 324.55px ;
     text-align: center;
+    
 }
-.gr6{
-    display: flex; /* sử dụng flexbox để căn giữa nội dung */
-  justify-content: center; /* căn giữa theo chiều ngang */
-  align-items: center;  
+.container3 img{
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: all 0.3s ease-in-out;
 }
-.container4{
-    padding-left: 90px;
-    padding-right: 90px;
-    display: flex; /* sử dụng flexbox để căn giữa nội dung */
-    line-height: 27.4px;
-    align-items: center;
-    color: white;
-    background-color: black;
-    font-family: 'Nunito Sans', sans-serif;
-    height: 190px;
+ 
+
+.gr1:hover img,.gr2:hover img,.gr3:hover img,.gr4:hover img,.gr5:hover img,
+.gr6:hover img,.gr7:hover img,.gr8:hover img,.gr9:hover img,.gr10:hover img,.gr11:hover img,.gr12:hover img{
+  
+    
+    cursor: pointer;
+    background-image: url(./02_Home.png);
+    background-repeat: no-repeat; /* không lặp lại icon */
+    background-position: center; /* đặt icon ở giữa div */
+    transform: scale(1.1);
+    
+    
+    box-shadow: 0 0 10px aqua;
 }
-.textf{
-    margin-right: 273px;
+.gr1  ,.gr3  ,.gr6 ,.gr8 ,.gr9  ,.gr11 {
+    background-color: gray;
 }
-.texts{
-    margin-right: 145px;
+.gr2 ,.gr4 ,.gr5 ,.gr7  ,.gr10  ,.gr12{
+    background-color:rgba(249, 244, 244, 0.771) ;
 }
-.textt{
-    margin-right: 67px;
-}
+.footer {
+  background: #141414;
+  padding: 90px 0;
+  font-family: 'Nunito Sans', sans-serif; }
+
+.footer-grid {
+  display: grid;
+  grid: auto/42% 25% repeat(2, 1fr) 15%;
+  margin: 0 90px; }
+  .footer__header {
+  color: #fff;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: .07rem; }
+
+.footer__copy {
+  color: #bcbcbc; }
+
+.footer__list {
+  list-style: none; }
+
+.footer__social {
+  justify-self: flex-end; }
+  
+
+.footer__link{
+  color: #bcbcbc;
+  text-decoration: none; }
+
+.footer__link:hover {
+  color: #fff; }
 </style>
 <body>
     <nav class="container1">
@@ -159,28 +194,48 @@
                             in User Interface Design and Development</div>
     </div>
     <div class="container3">
-        <div class="gr1" style="background-color: gray;"></div>
-        <div class="gr2"background-color: rgba(249, 244, 244, 0.771);></div>
-        <div class="gr3"style="background-color: gray;"></div>
-        <div class="gr4"background-color: rgba(249, 244, 244, 0.771);></div>
-        <div class="gr5"background-color: rgba(249, 244, 244, 0.771);></div>
-        <div class="gr6"style="background-color:  #10c9c3;"><img src="./02_Home.png" alt=""></div>
-        <div class="gr7"background-color: rgba(249, 244, 244, 0.771);></div>
-        <div class="gr8"style="background-color: gray;"></div>
-        <div class="gr9"style="background-color: gray;"></div>
-        <div class="gr10"background-color: rgba(249, 244, 244, 0.771);></div>
-        <div class="gr11"style="background-color: gray;"></div>
-        <div class="gr12"background-color: rgba(249, 244, 244, 0.771);></div>
+        <div class="gr1" ><img src="./img/02_Home a.jpg" width="100%" alt=""></div>
+        <div class="gr2"><img src="./img/02_Home b.jpg" width="100%" alt=""></div>
+        <div class="gr3"><img src="./img/02_Home c.jpg" width="100%" alt=""></div>
+        <div class="gr4"><img src="./img/02_Home d.jpg" width="100%" alt=""></div>
+        <div class="gr5"><img src="./img/02_Home e.jpg" width="100%" alt=""></div>
+        <div class="gr6"><img src="./img/02_Home f.jpg" width="100%" alt=""></div>
+        <div class="gr7"><img src="./img/02_Home g.jpg" width="100%" alt=""></div>
+        <div class="gr8"><img src="./img/02_Home h.jpg" width="100%" alt=""></div>
+        <div class="gr9"><img src="./img/02_Home l.jpg" width="100%" alt=""></div>
+        <div class="gr10"><img src="./img/02_Home o.jpg" width="100%" alt=""></div>
+        <div class="gr11"><img src="./img/02_Home u.jpg" width="100%" alt=""></div>
+        <div class="gr12"><img src="./img/02_Home y.jpg" width="100%" alt=""></div>
     </div>
-    <footer class="container4" >
-        
-        <div class="textf"><b>Piroll Design, Inc</b><br><br><span style="color: rgb(204, 193, 193); font-size: 19px;"><span>2017 Piroll. Al rights reserved<br>Designed by rolbirurk</div>
-        <div class="texts" style="color:rgb(204, 193, 193) ">hello@pirolltheme.com<br>+44 987 065 908</div>
-    
-    
-        <div class="textt" style="color:rgb(204, 193, 193)">Project <br> About <br> Service <br> Center</div>
-        <div class="textf" style="color:rgb(204, 193, 193)">News <br> Events <br> Contact <br> Legals</div>
-        <div class="textfi" style="color:rgb(204, 193, 193)">Facebook <br> Twitter <br> Instagram <br> Dribbble </div>
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer__info">
+                <h2 class="footer__header">Piroll Design, Inc.</h2>
+                <p class="footer__copy">&copy; 2017 Piroll. Al rights reserved <br>Designed by robirurk.</p>
+            </div>
+            <ul class="footer__list">
+                <li class="footer__item"><a class="footer__link" href="#">hello@pirolltheme.com</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">+44 987 065 908</a></li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__item"><a class="footer__link" href="#">Projects</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">About</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Services</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Carreer</a></li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__item"><a class="footer__link" href="#">News</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Events</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Contact</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Legals</a></li>
+            </ul>
+            <ul class="footer__list footer__social">
+                <li class="footer__item"><a class="footer__link" href="#">Facebook</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Twitter</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Instagram</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Dribbble</a></li>                                                                                                                                                                                
+            </ul>
+        </div>
     </footer>
 </body>
 </html>

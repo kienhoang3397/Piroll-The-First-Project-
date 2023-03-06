@@ -86,6 +86,9 @@
   cursor: pointer; /* biến con trỏ chuột thành hình bàn tay */
   filter: brightness(0.8);}
 .container2{
+    background-image: url(./img/01_One-Page_A.jpg);
+    background-size: cover;
+    background-position: center center;
     text-align: center;
     padding-top: 122px;
     padding-bottom: 122px;
@@ -184,7 +187,7 @@
 }
 .container4{
     width: 100%;
-    height: 900px;
+    height: 650px;
     display: flex;
     
 }
@@ -246,29 +249,51 @@
 .text2{
     font-family: 'Golos Text', sans-serif;
     color: black;
+    padding-bottom: 32.5px;
     
 } 
-.container6{
-    padding-left: 90px;
-    padding-right: 90px;
-    display: flex; /* sử dụng flexbox để căn giữa nội dung */
-    line-height: 27.4px;
-    align-items: center;
+.gr5{
+    background-color: #10c9c3;
     color: white;
-    background-color: black;
-    font-family: 'Nunito Sans', sans-serif;
-    height: 190px;
-}
-.textf{
-    margin-right: 273px;
-}
-.texts{
-    margin-right: 145px;
-}
-.textt{
-    margin-right: 67px;
-} 
+    height: 59px;
+    width: 155px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    
+    
+    cursor: pointer;}
+.footer {
+  background: #141414;
+  padding: 90px 0;
+  font-family: 'Nunito Sans', sans-serif; }
 
+.footer-grid {
+  display: grid;
+  grid: auto/42% 25% repeat(2, 1fr) 15%;
+  margin: 0 90px; }
+  .footer__header {
+  color: #fff;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: .07rem; }
+
+.footer__copy {
+  color: #bcbcbc; }
+
+.footer__list {
+  list-style: none; }
+
+.footer__social {
+  justify-self: flex-end; }
+  
+
+.footer__link{
+  color: #bcbcbc;
+  text-decoration: none; }
+
+.footer__link:hover {
+  color: #fff; }
 </style>
 <body>
     <nav class="container1">
@@ -323,7 +348,7 @@
             </div> 
         </div>
         <div class="container4">
-            <div class="img"></div>
+            <img src="./img/03_About a.jpg" alt="" style="width: 50%;float: left;">
             <div class="content">
                 <div class="contentcon">
                     <div class="contentclass="content1 style="font-family: 'Montserrat', sans-serif;font-size: 30pt; margin-bottom: 31px;"><b>About me</b></div>
@@ -340,15 +365,36 @@
             <div class="text1"><b>Need a Project?</b></div>
             <div class="text2">Let us know what you're looking for in an agency. We'll take a look and see <br>
                 if this could be the start of something beautiful.</div>
+            <input class="gr5" type="submit" value="LET TALK">   
     </div> 
-    <footer class="container6" >
-        
-        <div class="textf"><b>Piroll Design, Inc</b><br><br><span style="color: rgb(204, 193, 193); font-size: 19px;"><span>2017 Piroll. Al rights reserved<br>Designed by rolbirurk</div>
-        <div class="texts" style="color:rgb(204, 193, 193) ">hello@pirolltheme.com<br>+44 987 065 908</div>
-    
-    
-        <div class="textt" style="color:rgb(204, 193, 193)">Project <br> About <br> Service <br> Center</div>
-        <div class="textf" style="color:rgb(204, 193, 193)">News <br> Events <br> Contact <br> Legals</div>
-        <div class="textfi" style="color:rgb(204, 193, 193)">Facebook <br> Twitter <br> Instagram <br> Dribbble </div>
-    </footer>   
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer__info">
+                <h2 class="footer__header">Piroll Design, Inc.</h2>
+                <p class="footer__copy">&copy; 2017 Piroll. Al rights reserved <br>Designed by robirurk.</p>
+            </div>
+            <ul class="footer__list">
+                <li class="footer__item"><a class="footer__link" href="#">hello@pirolltheme.com</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">+44 987 065 908</a></li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__item"><a class="footer__link" href="#">Projects</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">About</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Services</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Carreer</a></li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__item"><a class="footer__link" href="#">News</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Events</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Contact</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Legals</a></li>
+            </ul>
+            <ul class="footer__list footer__social">
+                <li class="footer__item"><a class="footer__link" href="#">Facebook</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Twitter</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Instagram</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Dribbble</a></li>                                                                                                                                                                                
+            </ul>
+        </div>
+    </footer> 
 </body>
