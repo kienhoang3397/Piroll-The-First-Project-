@@ -27,23 +27,69 @@
     padding-top: 46px;
     padding-bottom: 46px;
     margin: 0 auto;
+    position: relative; /* đặt vị trí của container là relative */
+  
     
     
 }
+@media screen and (max-width: 768px){
+  .container1{
+    background-color: white;
+    font-family: 'Golos Text', sans-serif;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 46px;
+    padding-bottom: 46px;
+    margin: 0 auto;}}
+    
+
 .logo{
     width: 31px;
     height: 25px;
+}
+@media screen and (max-width: 768px){
+  .logo{
+    width: 35px;
+    height: 27px;
+    position: absolute; /* đặt vị trí của logo là absolute */
+    left: 25px; /* đặt khoảng cách từ logo đến bên trái là 0 */
+    
+    margin: 0; /* đặt margin là 0 để loại bỏ khoảng cách giữa logo và container */}
 }
 .menu{
     display: flex;
     gap: 23px;
 }
-
-
+@media screen and (max-width: 768px){
+  .menu{
+    display: flex;
+    gap: 15px;
+    position: absolute; /* đặt vị trí của logo là absolute */
+    right: 25px; /* đặt khoảng cách từ logo đến bên trái là 0 */
+    margin: 0; /* đặt margin là 0 để loại bỏ khoảng cách giữa logo và container */}
+    
+    
+  }
+  
 
 .my-div a {
   text-decoration: none;
   color: black;
+  font-size: 12pt;
+}
+@media screen and (max-width: 768px){
+  .my-div a {
+  text-decoration: none;
+  color: black;
+  font-size: 10pt;
+}
+.my-div a:hover {
+  color: aqua;
+}
 }
 
 .my-div a:hover {
@@ -56,8 +102,18 @@
 .my-div2 a {
   text-decoration: none;
   color: black;
+  font-size: 12pt;
 }
-
+@media screen and (max-width: 768px){
+  .my-div2 a {
+  text-decoration: none;
+  color: black;
+  font-size: 10pt;
+}
+.my-div2 a:hover {
+  color: aqua;
+}
+}
 .my-div2 a:hover {
   color: aqua;
 }
@@ -67,6 +123,16 @@
 .my-div3 a {
   text-decoration: none;
   color: black;
+  font-size: 12pt;
+  }
+  @media screen and (max-width: 768px){
+  .my-div3 a {
+  text-decoration: none;
+  color: black;
+  font-size: 10pt;
+}
+.my-div3 a:hover {
+  color: aqua;}
 }
 
 .my-div3 a:hover {
@@ -92,17 +158,37 @@
     padding-bottom: 107px;
     background-color: rgba(249, 244, 244, 0.771);
 }
+@media screen and (max-width: 768px){
+  .container2{
+    text-align: center;
+    padding-top: 107px;
+    padding-bottom: 107px;
+    background-color: rgba(249, 244, 244, 0.771);}
+}
 .text1{
     font-family: 'Montserrat', sans-serif;
     font-size: 25pt;
+    margin-bottom: 30px;}
+@media screen and (max-width: 768px){
+  .text1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18.5pt;
    
-    margin-bottom: 30px;
-
-    
+    margin-bottom: 30px;}
 }
+    
+
 .text2{
     font-family: 'Golos Text', sans-serif;
     color: gray;
+}
+@media screen and (max-width: 768px){
+  .text2{
+    font-family: 'Golos Text', sans-serif;
+    color: gray;
+    font-size: 11.5pt;
+  }
+/* đang làm tới cđáy */
 }
 .container3{
     width: 100%;
@@ -110,14 +196,29 @@
     grid-template-columns: repeat(4, 1fr) ;
     
     grid-template-rows: 324.55px 324.55px 324.55px ;
-    text-align: center;
+    text-align: center;}
+@media screen and (max-width: 768px){
+  .container3{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
     
-}
+    grid-template-rows: 1fr 1fr 1fr ;
+    text-align: center;}
+}    
+
 .container3 img{
     display: block;
     width: 100%;
     height: auto;
     transition: all 0.3s ease-in-out;
+}
+@media screen and (max-width: 768px){
+  .container3 img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    transition: all 0.3s ease-in-out;}
 }
  
 
@@ -140,27 +241,76 @@
 .gr2 ,.gr4 ,.gr5 ,.gr7  ,.gr10  ,.gr12{
     background-color:rgba(249, 244, 244, 0.771) ;
 }
+@media screen and (max-width: 768px){
+.gr1:hover img,.gr2:hover img,.gr3:hover img,.gr4:hover img,.gr5:hover img,
+.gr6:hover img,.gr7:hover img,.gr8:hover img,.gr9:hover img,.gr10:hover img,.gr11:hover img,.gr12:hover img{
+  
+    
+    cursor: pointer;
+    background-image: url(./02_Home.png);
+    background-repeat: no-repeat; /* không lặp lại icon */
+    background-position: center; /* đặt icon ở giữa div */
+    transform: scale(1.1);
+    
+    
+    box-shadow: 0 0 10px aqua;
+}
+.gr1  ,.gr3  ,.gr6 ,.gr8 ,.gr9  ,.gr11 {
+    background-color: gray;
+}
+.gr2 ,.gr4 ,.gr5 ,.gr7  ,.gr10  ,.gr12{
+    background-color:rgba(249, 244, 244, 0.771) ;
+}
+}
 .footer {
   background: #141414;
   padding: 90px 0;
   font-family: 'Nunito Sans', sans-serif; }
+  @media screen and (max-width: 768px){
+    .footer {
+  background: #141414;
+  padding: 90px 0;
+  font-family: 'Nunito Sans', sans-serif;
+  position: relative; }
+  } 
 
 .footer-grid {
   display: grid;
   grid: auto/42% 25% repeat(2, 1fr) 15%;
   margin: 0 90px; }
+  @media screen and (max-width: 768px){
+  .footer-grid {
+  display: block;
+  
+  margin: 0 25px; }
+  }
   .footer__header {
   color: #fff;
   font-family: 'Nunito Sans', sans-serif;
   font-size: 1.8rem;
   font-weight: 400;
   letter-spacing: .07rem; }
+  @media screen and (max-width: 768px){
+  .footer__header {
+  color: #fff;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.1rem;
+  
+  letter-spacing: .05rem;
+  margin-bottom: 9px; }
+  }
 
 .footer__copy {
   color: #bcbcbc; }
+  @media screen and (max-width: 768px){
+    .footer__copy {
+  color: #bcbcbc;
+  margin-bottom: 20px};
+  } 
 
 .footer__list {
   list-style: none; }
+
 
 .footer__social {
   justify-self: flex-end; }
@@ -172,6 +322,20 @@
 
 .footer__link:hover {
   color: #fff; }
+@media screen and (max-width: 768px){
+  .footer__list {
+  list-style: none;
+  font-size: 10px;
+  margin-bottom: 20px;
+  
+}}
+@media screen and (max-width: 768px){
+  .footerlistc{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 </style>
 <body>
     <nav class="container1">
@@ -179,9 +343,9 @@
             <a href="./index.html"><img src="logo.gif" alt=""></a>
         </div>
         <div class="menu">
-            <div class="my-div"><a href="./index.html" style="font-size: 12pt;  ">HOME</a></div>
-            <div class="my-div2"><a href="./about.html" style="font-size: 12pt;  "> ABOUT</a></div>
-            <div class="my-div3"><a href="./Contact.html" style="font-size: 12pt;  "> CONTACT</a></div>
+            <div class="my-div"><a href="./index.html"  >HOME</a></div>
+            <div class="my-div2"><a href="./about.html"   > ABOUT</a></div>
+            <div class="my-div3"><a href="./Contact.html"  > CONTACT</a></div>
 
 
 
@@ -213,7 +377,8 @@
                 <h2 class="footer__header">Piroll Design, Inc.</h2>
                 <p class="footer__copy">&copy; 2017 Piroll. Al rights reserved <br>Designed by robirurk.</p>
             </div>
-            <ul class="footer__list">
+            <div class="footerlistc">
+              <ul class="footer__list">
                 <li class="footer__item"><a class="footer__link" href="#">hello@pirolltheme.com</a></li>
                 <li class="footer__item"><a class="footer__link" href="#">+44 987 065 908</a></li>
             </ul>
@@ -235,6 +400,7 @@
                 <li class="footer__item"><a class="footer__link" href="#">Instagram</a></li>
                 <li class="footer__item"><a class="footer__link" href="#">Dribbble</a></li>                                                                                                                                                                                
             </ul>
+            </div>
         </div>
     </footer>
 </body>
